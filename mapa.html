@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="mapa.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
+        <title>Mapa</title>
+    </head>
+    <body>
+        <div class="localizacao">
+            <label for="localizacao">Digite a localização:</label>
+            <input type="text" id="localizacao" placeholder="Digite a localização" onkeydown="pressionarEnter(event)">
+            <button onclick="buscarLocalizacao()">Buscar</button>
+        </div>
+        
+        <div id="map"></div>
+
+        <script src="mapa.js"></script>
+    </body>
+</html>
